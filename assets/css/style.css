@@ -1,0 +1,43 @@
+/* Top styles */
+#top {
+    background-color: #c3ffdc
+}
+
+.nav-item {
+    font-size:1em;
+}
+
+.logo {
+    font-size:1.5em;
+}
+
+#hi {
+    text-align: center;
+}
+
+.wave {
+    font-size: 2.5em;
+}
+
+/* Bio styles */
+
+#bio{
+    padding-top:6em
+}
+
+.img {
+    text-align:center;
+}
+
+.face{
+    height: 13em;
+    width: 14em;
+}
+
+/* Footer styles */
+
+/* media queries */
+@media screen and (max-width: 48em){
+    .abt-me{
+        text-align: center;
+    }
