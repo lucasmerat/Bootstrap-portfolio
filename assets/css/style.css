@@ -1,3 +1,7 @@
+body {
+    font-family: 'Lato', sans-serif !important;
+}
+
 /* Top styles */
 #top {
     background-color: #c3ffdc
@@ -5,6 +9,14 @@
 
 .nav-item {
     font-size:1em;
+}
+
+.navbar-brand{
+    color: rgba(0,0,0,.7) !important;
+}
+
+.buttonz > button {
+    
 }
 
 .logo {
@@ -15,6 +27,10 @@
     text-align: center;
 }
 
+#hi > h1 {
+    color: rgba(0,0,0,.7);
+}
+
 .wave {
     font-size: 2.5em;
 }
@@ -22,7 +38,8 @@
 /* Bio styles */
 
 #bio{
-    padding-top:6em
+    padding-top:6em;
+    padding-bottom: 6em;
 }
 
 .img {
@@ -35,6 +52,25 @@
 }
 
 /* Footer styles */
+#footer {
+    background-color: #c3ffdc;
+    padding-top: 6em;
+}
+
+.social > a {
+    font-size: 2em;
+    color: #638170;
+}
+
+.social > a:hover {
+    color:#485e51;
+}
+
+.cr > p {
+   color: #abb4af;
+   font-size:.5em;
+   margin: 0;
+}
 
 /* media queries */
 @media screen and (max-width: 48em){
