@@ -2,6 +2,10 @@ body {
     font-family: 'Lato', sans-serif !important;
 }
 
+a {
+    color: #638170;
+}
+
 /* Top styles */
 #top {
     background-color: #c3ffdc
@@ -37,6 +41,20 @@ body {
 
 /* Bio styles */
 
+.note > p > a:hover {
+    color: #485e51;
+    text-decoration: none;
+}
+
+.note > p {
+    margin-top: 20px;
+    color: rgba(0,0,0,.7);
+}
+
+.note {
+    margin: 0 auto;
+}
+
 #bio{
     padding-top:6em;
     padding-bottom: 6em;
@@ -51,6 +69,26 @@ body {
     width: 14em;
 }
 
+/* form styles */
+
+form {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.submit {
+    background-color: #95b0a1;
+    color:white;
+}
+
+.submit:hover {
+    background-color:#485e51;
+}
+
+#contact {
+    padding: 4em 0em 4em 0em;
+}
+
 /* Footer styles */
 #footer {
     background-color: #c3ffdc;
@@ -59,7 +97,7 @@ body {
 
 .social > a {
     font-size: 2em;
-    color: #638170;
+    color: #83a994;
 }
 
 .social > a:hover {
