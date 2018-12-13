@@ -90,6 +90,24 @@ form {
     padding: 4em 0em 4em 0em;
 }
 
+/* Portfolio styles */
+
+.fa-desktop {
+    font-size:3em;
+}
+
+#work1 {
+    background-color: #e0acf1;
+}
+
+#work2 {
+    background-color: #ffe1be;
+}
+
+.point {
+    font-size:2.5em;
+}
+
 /* Footer styles */
 #footer {
     background-color: #c3ffdc;
@@ -112,7 +130,64 @@ form {
 }
 
 /* media queries */
-@media screen and (max-width: 48em){
+
+@media screen and (max-width: 1400px){
+    .work1-button {
+        display:flex;
+        flex-direction:row-reverse;
+    }
+
+    .work2-button {
+        display:flex;
+        flex-direction:row-reverse;
+    }
+
+    .img2 {
+        display:flex;
+        flex-direction:row-reverse;
+    }
+
+}
+
+@media screen and (max-width: 640px){
     .abt-me{
         text-align: center;
     }
+    .left-button-row {
+    display:flex;
+    flex-direction:column-reverse;
+    }
+
+    #work2 {
+        background-color: green;
+    }
+
+    .work1-button {
+        justify-content: center;
+    }
+
+    .work2-button {
+        justify-content: center;
+    }
+
+    .work-para {
+        padding: 20px;
+        text-align:center;
+    }
+
+    .img2 {
+        display:flex;
+        justify-content: center;
+    }
+
+    .img-box-1 {
+        display:flex;
+        justify-content: center;
+    }
+
+    .button-box {
+        display:flex;
+        justify-content: center;
+    }
+
+}
