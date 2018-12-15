@@ -1,5 +1,6 @@
 body {
     font-family: 'Lato', sans-serif !important;
+    width:100%;
 }
 
 a {
@@ -38,6 +39,47 @@ a {
 
 .wave {
     font-size: 2.5em;
+
+}
+
+.wave:hover {
+    -webkit-animation-name: wiggle;
+    -ms-animation-name: wiggle;
+    -ms-animation-duration: 1000ms;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out;
+  }
+  
+  @-webkit-keyframes wiggle {
+    0% {-webkit-transform: rotate(10deg);}
+    25% {-webkit-transform: rotate(-10deg);}
+    50% {-webkit-transform: rotate(20deg);}
+    75% {-webkit-transform: rotate(-5deg);}
+    100% {-webkit-transform: rotate(0deg);}
+  }
+  
+  @-ms-keyframes wiggle {
+    0% {-ms-transform: rotate(1deg);}
+    25% {-ms-transform: rotate(-1deg);}
+    50% {-ms-transform: rotate(1.5deg);}
+    75% {-ms-transform: rotate(-5deg);}
+    100% {-ms-transform: rotate(0deg);}
+  }
+  
+  @keyframes wiggle {
+    0% {transform: rotate(10deg);}
+    25% {transform: rotate(-10deg);}
+    50% {transform: rotate(20deg);}
+    75% {transform: rotate(-5deg);}
+    100% {transform: rotate(0deg);}
+  }
+
+.hamburger {
+    border: none;
+    margin-top: 6px;
 }
 
 /* Bio styles */
@@ -96,6 +138,14 @@ form {
     font-size:3em;
 }
 
+.ss-work {
+    transition: transform 1s;
+}
+
+.ss-work:hover {
+    transform: scale(1.1);
+}
+
 #work1 {
     background-color: #e0acf1;
 }
@@ -131,7 +181,7 @@ form {
 
 /* media queries */
 
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 2000px){
     .work1-button {
         display:flex;
         flex-direction:row-reverse;
@@ -149,17 +199,13 @@ form {
 
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 576px){
     .abt-me{
         text-align: center;
     }
     .left-button-row {
-    display:flex;
-    flex-direction:column-reverse;
-    }
-
-    #work2 {
-        background-color: green;
+        display:flex;
+        flex-direction:column-reverse;
     }
 
     .work1-button {
