@@ -280,6 +280,7 @@ form {
 @media screen and (max-width: 576px){
     .abt-me{
         text-align: center;
+        width:100%;
     }
     .left-button-row {
         display:flex;
@@ -325,8 +326,20 @@ form {
        font-size: 3.4em;
     }
 
-    .info,#top,.navbar-dark,.navbar-dark::after{
+    .info,#top,.navbar-dark {
         height: 80vh;
+        background: url(../images/skymobile.jpg) 50% 0 no-repeat fixed;
+    }
+
+    .navbar-dark::after{
+        height:80vh;
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0,0,0,.3);
     }
 
     .custom-toggler.navbar-toggler {
