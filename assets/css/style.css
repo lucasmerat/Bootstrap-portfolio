@@ -198,8 +198,17 @@ form {
     font-size:3em;
 }
 
+.intro-box{
+    margin: 25px 0px 25px 0px;
+}
+
+.intro-box > p {
+    margin-bottom:0px;
+}
+
 .ss-work {
     transition: transform 1s;
+    object-fit: contain;
 }
 
 .ss-work:hover {
