@@ -99,7 +99,7 @@ a {
 
 }
 
-.wave:hover {
+.wave {
     -webkit-animation-name: wiggle;
     -ms-animation-name: wiggle;
     -ms-animation-duration: 1000ms;
@@ -132,7 +132,7 @@ a {
     50% {transform: rotate(20deg);}
     75% {transform: rotate(-5deg);}
     100% {transform: rotate(0deg);}
-  }
+}
 
 .hamburger {
     border: none;
@@ -198,6 +198,24 @@ form {
 }
 
 /* Portfolio styles */
+
+.bounce {
+    -moz-animation: bounce 2s 2;
+    -webkit-animation: bounce 2s 2;
+    animation: bounce 2s 2;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+}
 
 .fa-desktop {
     font-size:3em;
