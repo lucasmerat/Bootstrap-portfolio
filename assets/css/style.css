@@ -253,6 +253,7 @@ form {
     color:#efdf90;
     width:50%;
     margin:0 auto;
+    line-height: 40px;
 }
 
 .contact-msg > a {
