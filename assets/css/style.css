@@ -63,7 +63,7 @@ a {
     color: #efdf90 !important;
 }
 
-#hi {
+#hi, #hi-work {
     z-index:2;
     text-align: center;
     display: flex;
@@ -87,6 +87,11 @@ a {
 #hi > h1 {
     color: #efdf90;
     font-size:3.9em
+}
+
+#hi-work > h1 {
+    font-size:3em;
+    color: #efdf90;
 }
 
 .wave {
@@ -196,6 +201,7 @@ form {
 
 .fa-desktop {
     font-size:3em;
+    color: rgb(25, 129, 149)
 }
 
 .intro-box{
@@ -204,6 +210,32 @@ form {
 
 .intro-box > p {
     margin-bottom:0px;
+}
+
+.github, .game {
+    background-color: #f2df84;
+}
+
+.img-box {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.img-size{  
+    width:70%;
+}
+
+.project-info{
+    margin-top:25px;
+    width:50%;
+}
+
+.project-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
 }
 
 .ss-work {
@@ -215,12 +247,24 @@ form {
     transform: scale(1.1);
 }
 
-#work1 {
-    background-color: #e0acf1;
+#giphy-share {
+    background-color: #7b58ff;
+    color:white;
 }
 
-#work2 {
-    background-color: #ffe1be;
+#vinny{
+    background-color: #e89e50;
+    color:white;
+}
+
+#ssb{
+    background-color: #89d9d7;
+    color:white;
+}
+
+#pirate {
+    background-color: #ddbe9a;
+    color:white;
 }
 
 .point {
@@ -251,49 +295,10 @@ form {
 
 /* media queries */
 
-@media screen and (max-width: 2000px){
-    .work1-button {
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-right:0px;
-    }
-
-    .work2-button {
-        display:flex;
-        flex-direction:row-reverse;
-        align-items: center;
-    }
-
-    .button-box {
-        align-items: center;
-        display:flex;
-        flex-direction:column;
-    }
-
-    .img-box-2 {
-        display:flex;
-        flex-direction:row-reverse;
-        padding-right: 0px;
-        padding-left: 0px;
-    }
-
-    .img-box-1 {
-        padding-left:0px;
-        padding-right: 0px;
-    }
-
-}
-
 @media screen and (max-width: 576px){
     .abt-me{
         text-align: center;
         width:100%;
-    }
-    .left-button-row {
-        display:flex;
-        flex-direction:column-reverse;
     }
 
     .work1-button {
@@ -312,16 +317,12 @@ form {
         text-align:center;
     }
 
-    .img-box-2 {
-        justify-content: center;
-        padding-right: 0px;
-        padding-left: 0px;
+    .img-size{
+        width:100%;
     }
 
-    .img-box-1 {
-        justify-content: center;
-        padding-right: 0px;
-        padding-left: 0px;
+    .project-info{
+        width:100%;
     }
 
     .button-box {
