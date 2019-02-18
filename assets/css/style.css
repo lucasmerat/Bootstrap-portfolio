@@ -326,9 +326,12 @@ form {
        font-size: 3.4em;
     }
 
-    .info,#top,.navbar-dark {
-        height: 80vh;
+    #top {
         background: url(../images/skymobile.jpg) 50% 0 no-repeat fixed;
+    }
+
+    .info, #top, .navbar-dark {
+        height: 80vh;
     }
 
     .navbar-dark::after{
