@@ -56,7 +56,10 @@ a {
 .github, .game {
     margin:10px;
 }
-    
+
+.game {
+    margin-bottom:0px;
+}  
 
 .logo {
     font-size:1.7em;
@@ -264,6 +267,16 @@ form {
 
 .ss-work:hover {
     transform: scale(1.1);
+}
+
+#should-i-move-here{
+    background-color: #8ec0c7;
+    color:white;
+}
+
+#multiplayer-rps{
+    background-color: #fc6d6e;
+    color:white
 }
 
 #giphy-share {
