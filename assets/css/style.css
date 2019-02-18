@@ -54,11 +54,13 @@ a {
 }
 
 .github, .game {
+    color:#11434c;
     margin:10px;
 }
 
 .game {
     margin-bottom:0px;
+    width: 135px;
 }  
 
 .logo {
@@ -183,6 +185,57 @@ a {
 
 /* form styles */
 
+.letter{
+    position:relative;
+    font-size:3.4em;
+    color: #efdf90;
+}
+
+.closed{
+    opacity: 0;
+    position:absolute;
+    animation-name: fadeout;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeout {
+    0% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 1;
+	}
+	75% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.open{
+    opacity:1;
+    animation-name: fadein;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fadein {
+    0% {
+		opacity: 0;
+	}
+	25% {
+		opacity: 0;
+	}
+	75% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 form {
     margin: 0 auto;
     width: 60%;
@@ -200,6 +253,18 @@ form {
 #contact {
     padding: 4em 0em 4em 0em;
 }
+
+.contact-msg {
+    color:#efdf90;
+    width:50%;
+    margin:0 auto;
+}
+
+.contact-msg > a {
+    color: #efdf90;
+    text-decoration-line: underline;
+}
+
 
 /* Portfolio styles */
 
@@ -392,6 +457,10 @@ form {
     }
     .custom-toggler .navbar-toggler-icon {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(239,223,144, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+
+    .contact-msg {
+        width:100%;
     }
 
 }
