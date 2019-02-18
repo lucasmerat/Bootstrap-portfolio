@@ -241,11 +241,6 @@ form {
     width: 60%;
 }
 
-.submit {
-    background-color: #95b0a1;
-    color:white;
-}
-
 .submit:hover {
     background-color:#485e51;
 }
@@ -265,6 +260,14 @@ form {
     text-decoration-line: underline;
 }
 
+.submit{
+    background-color:#efdf90;
+}
+
+.submit-box{
+    display:flex;
+    justify-content: center;
+}
 
 /* Portfolio styles */
 
