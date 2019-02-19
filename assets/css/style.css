@@ -248,7 +248,8 @@ form {
 }
 
 .submit:hover {
-    background-color:#485e51;
+    background-color: #c3b674;
+    color: #11434c;
 }
 
 #contact {
@@ -275,6 +276,15 @@ form {
     display:flex;
     justify-content: center;
 }
+
+/* Resume page */
+.fa-file{
+    position: relative;
+    font-size: 3.4em;
+    color: #efdf90;
+    margin-top:.5em;
+}
+
 
 /* Portfolio styles */
 
