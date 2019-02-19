@@ -29,10 +29,15 @@ a {
 .nav-link{
     color: #efdf90 !important;
     font-size:1.2em;
+    transition: color .7s ease;
+}
+
+.logo{
+    transition: color .7s ease;
 }
 
 .nav-link:hover, .logo:hover{
-    color:#fff5c6 !important;
+    color:#9c9161 !important;
 }
 
 .navbar{
@@ -106,12 +111,13 @@ a {
 
 .wave {
     animation-delay: .5s;
+    animation-iteration-count: 2;
     -webkit-animation-name: wiggle;
     -ms-animation-name: wiggle;
     -ms-animation-duration: 1000ms;
     -webkit-animation-duration: 1000ms;
-    -webkit-animation-iteration-count: 1;
-    -ms-animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 2;
+    -ms-animation-iteration-count: 2;
     -webkit-animation-timing-function: ease-in-out;
     -ms-animation-timing-function: ease-in-out;
   }
@@ -305,6 +311,12 @@ form {
 
 .github, .game {
     background-color: #f2df84;
+    border-radius: 4px;
+    width: 145px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .img-box {
@@ -326,7 +338,19 @@ form {
 .project-buttons {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 16px;
+}
+
+.project-buttons > a {
+    transition: background-color .7s ease;
+    background-color: #f2df84;
+}
+
+.project-buttons > a:hover {
+    text-decoration: none;
+    background-color: #c3b674;
+    color: #11434c;
 }
 
 .ss-work {
@@ -380,12 +404,13 @@ form {
 }
 
 .social > a {
+    transition: color .7s ease;
     font-size: 2em;
     color: #efdf90;
 }
 
 .social > a:hover {
-    color:#fff5c6;
+    color:#948957;
 }
 
 .cr > p {
