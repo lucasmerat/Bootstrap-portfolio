@@ -1,6 +1,6 @@
 const express = require('express');
 
-process.env.PORT = 3000;
+let PORT = process.env.PORT || 3000;
 
 const app = express();
 
@@ -26,6 +26,6 @@ app.get('/portfolio', function(req,res){
 
 
 
-app.listen(process.env.PORT, '0.0.0.0', function(err) {
-    console.log("Started listening on %s", app.url);
+app.listen(PORT, '0.0.0.0', function(err) {
+    console.log("Started listening on %s", PORT);
   });
