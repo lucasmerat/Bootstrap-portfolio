@@ -26,6 +26,6 @@ app.get('/portfolio', function(req,res){
 
 
 
-app.listen(PORT, '0.0.0.0', function(err) {
+app.listen(PORT, function(err) {
     console.log("Started listening on %s", PORT);
   });
