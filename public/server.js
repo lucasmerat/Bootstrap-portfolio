@@ -1,10 +1,12 @@
 const express = require('express');
 
+process.env.PORT = 3000;
+
 const app = express();
 
 app.set('view engine', 'ejs');
 
-app.use(express.static(__dirname + "/../public"));
+app.use('/assets', express.static('assets'));
 
 app.get('/', function(req,res){
     res.render('index')
@@ -24,7 +26,6 @@ app.get('/portfolio', function(req,res){
 
 
 
-var server = app.listen(3000, function(){
-    var port = server.address().port;
-    console.log("Server started at http://localhost:%s", port);
-});
+app.listen(process.env.PORT, '0.0.0.0', function(err) {
+    console.log("Started listening on %s", app.url);
+  });
