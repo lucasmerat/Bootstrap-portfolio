@@ -460,6 +460,10 @@ form {
         width:100%;
     }
 
+    .fa-angle-down{
+        display:none;
+    }
+
     .work1-button {
         justify-content: center;
         padding-right: 0px;
