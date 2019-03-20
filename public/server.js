@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 
 app.use('/assets', express.static(__dirname + '/assets'));
 
-app.use('/MultiplayerRPS', express.static(__dirname + '/multiplayerRPS'));
+app.use('/MultiplayerRPS', express.static(path.join(__dirname + '/multiplayerRPS')));
 
 app.use('/GiphyShare', express.static(__dirname + '/GiphyShare'));
 
