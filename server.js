@@ -9,17 +9,7 @@ app.set('view engine', 'ejs');
 
 // Static file setup
 
-app.use('/assets', express.static(__dirname + '/assets'));
-
-app.use('/MultiplayerRPS', express.static(path.join(__dirname + '/multiplayerRPS')));
-
-app.use('/GiphyShare', express.static(__dirname + '/GiphyShare'));
-
-app.use('/SuperSmashRPG', express.static(__dirname + '/SuperSmashRPG'));
-
-app.use('/Word-Guess-Game', express.static(__dirname + '/Word-Guess-Game'));
-
-app.use('/TriviaGame', express.static(__dirname + '/TriviaGame'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 //EJS Template rendering
 
