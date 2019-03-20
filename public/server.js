@@ -7,12 +7,21 @@ const app = express();
 
 app.set('view engine', 'ejs');
 
+// Static file setup
+
 app.use('/assets', express.static('assets'));
 
 app.use('/MultiplayerRPS', express.static('multiplayerRPS'));
 
 app.use('/GiphyShare', express.static('GiphyShare'));
 
+app.use('/SuperSmashRPG', express.static('SuperSmashRPG'));
+
+app.use('/Word-Guess-Game', express.static('Word-Guess-Game'));
+
+app.use('/TriviaGame', express.static('TriviaGame'));
+
+//EJS Template rendering
 
 app.get('/', function(req,res){
     res.render('index')

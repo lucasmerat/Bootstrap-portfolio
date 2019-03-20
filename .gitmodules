@@ -4,3 +4,12 @@
 [submodule "public/GiphyShare"]
 	path = public/GiphyShare
 	url = https://github.com/lucasmerat/GiphyShare.git
+[submodule "public/TriviaGame"]
+	path = public/TriviaGame
+	url = https://github.com/lucasmerat/TriviaGame.git
+[submodule "public/SuperSmashRPG"]
+	path = public/SuperSmashRPG
+	url = https://github.com/lucasmerat/SuperSmashRPG.git
+[submodule "public/Word-Guess-Game"]
+	path = public/Word-Guess-Game
+	url = https://github.com/lucasmerat/Word-Guess-Game.git
