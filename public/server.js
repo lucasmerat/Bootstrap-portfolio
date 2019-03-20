@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path')
 
 let PORT = 80;
 
@@ -7,6 +8,11 @@ const app = express();
 app.set('view engine', 'ejs');
 
 app.use('/assets', express.static('assets'));
+
+app.use('/MultiplayerRPS', express.static('multiplayerRPS'));
+
+app.use('/GiphyShare', express.static('GiphyShare'));
+
 
 app.get('/', function(req,res){
     res.render('index')
@@ -23,8 +29,6 @@ app.get('/resume', function(req,res){
 app.get('/portfolio', function(req,res){
     res.render('portfolio')
 });
-
-
 
 app.listen(PORT, function(err) {
     console.log("Started listening on %s", PORT);

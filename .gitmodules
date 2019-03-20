@@ -1,0 +1,6 @@
+[submodule "public/multiplayerRPS"]
+	path = public/multiplayerRPS
+	url = https://github.com/lucasmerat/MultiplayerRPS.git
+[submodule "public/GiphyShare"]
+	path = public/GiphyShare
+	url = https://github.com/lucasmerat/GiphyShare.git
