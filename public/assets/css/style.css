@@ -429,6 +429,16 @@ form {
     color:white;
 }
 
+#shopping-buddy {
+    background-color: #ab05b6;
+    color:white;
+}
+
+#queer-eye-quiz {
+    background-color: #96e2ce;
+    color:white;
+}
+
 .point {
     font-size:3em;
     margin-top: 30px;
