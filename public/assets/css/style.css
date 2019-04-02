@@ -100,9 +100,10 @@ a {
     color: #efdf90;
 }
 
-.fa-terminal{
+.fa-terminal, #typing{
     color: #efdf90;
-    font-size: 42px;
+    font-size: 35px;
+    margin: 25px 10px;
 }
 
 .info{
