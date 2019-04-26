@@ -442,10 +442,16 @@ form {
 
 #brew-space{
     background-color: #f28e1c;
+    color:white;
 }
 
 #queer-eye-quiz {
     background-color: #96e2ce;
+    color:white;
+}
+
+#mongo-music{
+    background-color: #247bbd;
     color:white;
 }
 
