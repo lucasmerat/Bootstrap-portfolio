@@ -42,10 +42,39 @@
     <title>Hi, I'm Lucas!</title>
   </head>
   <body>
-    <section id="top">
-      <% include partials/nav.ejs %>
+    <section id="top" class="contact-top">
+      <div class="container navbar-dark contact-dark">
+  <nav class="navbar navbar-expand-md  py-4 ">
+    <div class="buttonz order-0">
+      <div class="row">
+        <div class="col-10">
+          <a class="logo navbar-brand" href="/">Lucas Merat</a>
+        </div>
+        <div class="col-2">
+          <button
+            class="hamburger navbar-toggler custom-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target=".dual-collapse2"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item pl-3">
+          <a class="nav-link" href="portfolio">Work</a>
+        </li>
+        <li class="nav-item pl-3">
+          <a class="nav-link" href="contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-      <div class="container info">
+      <div class="container contact-info">
         <div id="hi-work" class="py-5">
           <h1>Say hi back!</h1>
           <p class="letter">
@@ -53,50 +82,9 @@
             ><span class="open"><i class="far fa-envelope-open"></i></span>
           </p>
           <h3 class="contact-msg">
-            Feel free to send me a message below, but if forms aren't your
-            thing, shoot me a note at
-            <a href="mailto:lucas@lucasmerat.com">lucas@lucasmerat.com</a>
+            I'd love to hear from you! Send me a message at 
+            <a href="mailto:lucas@lucasmerat.com">lucas@lucasmerat.com</a> or connect with me on the social channels below.
           </h3>
-          <a href="#contact"><i class="fas fa-angle-down bounce2"></i></a>
-        </div>
-      </div>
-    </section>
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <form>
-            <div class="form-group">
-              <label for="exampleText">Name</label>
-              <input
-                type="text"
-                class="form-control"
-                id="exampleText"
-                placeholder="Enter name"
-              />
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input
-                type="email"
-                class="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-                placeholder="Enter email"
-              />
-            </div>
-            <div class="form-group">
-              <label for="comment">Message</label>
-              <textarea
-                class="form-control"
-                rows="5"
-                id="comment"
-                placeholder="Say hi"
-              ></textarea>
-            </div>
-            <div class="submit-box">
-              <button type="submit" class="btn submit">Submit</button>
-            </div>
-          </form>
         </div>
       </div>
     </section>
