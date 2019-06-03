@@ -1,12 +1,12 @@
 body {
   font-family: "Lato", sans-serif !important;
   width: 100%;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 a {
@@ -30,8 +30,9 @@ a {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.navbar-toggler:focus, .navbar-toggler:hover {
-    outline: none;
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+  outline: none;
 }
 
 .nav-item {
@@ -118,15 +119,14 @@ a {
   margin: 25px 10px;
 }
 
-.info, .contact-info {
+.info,
+.contact-info {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-
 
 #hi > h1 {
   color: #efdf90;
@@ -520,6 +520,16 @@ form {
   color: white;
 }
 
+#thirty-days {
+  background: rgb(231, 75, 60);
+  background: linear-gradient(
+    180deg,
+    rgb(158, 49, 39) 0%,
+    rgba(223, 111, 101, 1) 80%
+  );
+  color: white;
+}
+
 #queer-eye-quiz {
   background: rgb(80, 190, 161);
   background: linear-gradient(
@@ -634,8 +644,10 @@ form {
     height: 80vh;
   }
 
-  .contact-top, .contact-dark, .contact-dark::after{
-      height:100vh !important;
+  .contact-top,
+  .contact-dark,
+  .contact-dark::after {
+    height: 100vh !important;
   }
 
   .navbar-dark::after {
